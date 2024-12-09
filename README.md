@@ -4,7 +4,7 @@
 - 유치원 및 교육 현장에서도 활용할 수 있는 창작 활동 플랫폼으로 활용할 수 있습니다.<br>
 
 <div align="center">
-<a href = "blue.kku.ac.kr:1203"><img width="512" alt="logo" src="https://github.com/user-attachments/assets/ddbf89c0-fe5d-4ba4-8f3d-e67fa9bd6704"> </a>
+<a href = "blue.kku.ac.kr:1203"><img width="512" src="https://github.com/user-attachments/assets/ddbf89c0-fe5d-4ba4-8f3d-e67fa9bd6704"> </a>
 
  [로고 클릭시 Web 바로가기가 적용됩니다.]
 </div>
