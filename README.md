@@ -1,7 +1,7 @@
 # 🌌 별빛 창작소 (Starlight Studio)
 ### 📚 유치원생을 위한 생성형 AI 기반의 창의적인 나만의 동화책 만들기 웹 서비스
 - 별빛 창작소는 아이들의 상상력을 키워주고, 가족과 함께 추억을 쌓는 특별한 공간인 동화 제작 플랫폼입니다.
-- 유치원 및 교육 현장에서도 활용할 수 있는 창작 활동 플랫폼으로 활용할 수 있습니다.<br><br>
+- 유치원 및 교육 현장에서도 창작 활동 플랫폼으로 활용할 수 있습니다.<br><br>
 
 <div align="center">
 <a href = "blue.kku.ac.kr:1203"><img width="512" src="https://github.com/user-attachments/assets/ddbf89c0-fe5d-4ba4-8f3d-e67fa9bd6704"> </a>
