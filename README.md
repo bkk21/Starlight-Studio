@@ -6,7 +6,7 @@
 <div align="center">
 <a href = "blue.kku.ac.kr:1203"><img width="512" src="https://github.com/user-attachments/assets/ddbf89c0-fe5d-4ba4-8f3d-e67fa9bd6704"> </a>
 
- [로고 클릭시 Web 바로가기가 적용됩니다.]
+ [[Web 바로가기 링크]](https://blue.kku.ac.kr:1203)
 </div>
 
 # 😆 Contributors & Position
