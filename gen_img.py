@@ -12,7 +12,8 @@ client = OpenAI()
 #background - 배경 (ex. "마법의 숲에 있는 거대한 성에 살고 있는 토끼가 여행을 떠난다")
 #prompt_input - 동화 내용 (ex. "마법의 숲에 사는 토끼는 신나는 여행을 떠나기 위해 거대한 성의 문을 열고 친구 거북이와 함께 모험을 시작했어요.")
 def gen_img(topic, character, background, prompt_input):
-        
+
+        #프롬프트 규정사항
         sys_prompt = """###시스템 프롬프트:
 아래는 그림을 그릴 때 지켜야 하는 규칙이야.
 1. 그림에는 술, 총, 폭력, 마약 등과 같이 어린이에게 부적절한 그림이 들어가지 않을 것
@@ -30,15 +31,17 @@ def gen_img(topic, character, background, prompt_input):
         """        
         #input 지정
         prompt_text = f"###시스템 프롬프트: {sys_prompt}\n\n###주제: {topic}\n\n###캐릭터: {character}\n\n###배경: {background}\n\n###사용자 입력: {prompt_input}\n\n"
-                
+
+        #이미지 생성
         response = client.images.generate(
-            model = "dall-e-3",
-            prompt = prompt_text,
-            size = "1024x1024",
+            model = "dall-e-3", #모델
+            prompt = prompt_text, #프롬프트
+            size = "1024x1024", #크기
             quality = "standard",
-            n = 1,
+            n = 1, #개수
         )
-        
+
+        #이미지 url
         image_url = response.data[0].url
         
         return image_url
@@ -64,15 +67,17 @@ def gen_img_update(topic, character, background, prompt_input, request_text):
         """        
         #input 지정
         prompt_text = f"###시스템 프롬프트: {sys_prompt}\n\n###주제: {topic}\n\n###캐릭터: {character}\n\n###배경: {background}\n\n###참고사항: {request_text}\n\n##사용자 입력: {prompt_input}\n\n"
-                
+
+        #이미지 생성
         response = client.images.generate(
-            model = "dall-e-3",
-            prompt = prompt_text,
-            size = "1024x1024",
+            model = "dall-e-3", #모델 지정
+            prompt = prompt_text, #프롬프트
+            size = "1024x1024", #사진 크기
             quality = "standard",
-            n = 1,
+            n = 1, #개수
         )
-        
+
+        #이미지 url
         image_url = response.data[0].url
         
         return image_url
