@@ -46,20 +46,20 @@ def gen_gemini(num, topic, character, background, context):
     #괴롭힘 기준점 조정   
     safety_settings = [
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_HARASSMENT,
-            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_HARASSMENT, #괴롭힘
+            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,#일부 차단
         ),
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_HATE_SPEECH,#증오심
+            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,#대부분 차단
         ),
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, #음란물
+            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE, #대부분 차단
         ),
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, #위해성
+            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE, #일부 차단
         ),
     ]
 
@@ -108,20 +108,20 @@ def gen_gemini_renew(num, topic, character, background, context, before):
     #괴롭힘 기준점 조정   
     safety_settings = [
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_HARASSMENT,
-            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_HARASSMENT, #괴롭힘
+            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE, #일부 차단
         ),
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_HATE_SPEECH, #증오심
+            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE, #대부분 차단
         ),
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,#음란물
+            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,#대부분 차단
         ),
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,#위험성
+            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,#일부차단
         ),
     ]
 
@@ -171,20 +171,20 @@ def gen_gemini_update(num, topic, character, background, context, request_text):
     #괴롭힘 기준점 조정   
     safety_settings = [
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_HARASSMENT,
-            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_HARASSMENT,#괴롭힘
+            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE, #일부 차단
         ),
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_HATE_SPEECH, #증오심
+            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE, #대부분 차단
         ),
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, #음란물
+            threshold=HarmBlockThreshold.BLOCK_LOW_AND_ABOVE, #대부분 차단
         ),
         SafetySetting(
-            category=HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+            category=HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, #위험성
+            threshold=HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE, #일부 차단
         ),
     ]
 
